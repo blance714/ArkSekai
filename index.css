@@ -1,0 +1,268 @@
+/*-Body-*/
+
+html {
+  font-size: 14px;
+}
+
+body {
+  background-image: url("https://pjsekai.sega.jp/assets/images/special/download/virtual-bg/virtual_bg_01_unit01.png");
+  background-size: cover;
+}
+
+#main {
+  width: 100%;
+  height: 100%;
+}
+
+/*--Section--*/
+
+section.section .sectionDisplay {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+
+  padding: 3.5rem 0;
+}
+
+/*---Homepage---*/
+
+#section-homepage {
+  height: 100%;
+  padding-left: 5.875rem;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#homepage-logo {
+  position: absolute;
+  left: 4.5rem;
+  top: 3.5rem;
+  height: 6.25rem;
+}
+
+#homepage-title {
+  font-size: 5.5rem;
+  /* font-weight: ; */
+}
+
+#download-wrapper {
+  position: absolute;
+  bottom: 2.5rem;
+  left: 5.875rem;
+
+  width: 9.375rem;
+  height: 9.375rem;
+}
+
+#download-wrapper > *, #download-wrapper .downloadBtn {
+  width: 100%;
+  height: 100%;
+
+  display: block;
+}
+
+#download-show {
+  width: 100%;
+  height: 100%;
+  background-size: 100% auto;
+  background-image: url("https://pjsekai.sega.jp/assets/images/special/download/sns-icon/unit04/icon_01_unit04_kohane_02.png");
+}
+
+#download-detail {
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+#download-buttons-wrapper {
+  position: absolute;
+  left: 12rem;
+}
+
+#download-buttons-wrapper > .downloadBtn {
+  width: 9.5rem;
+  height: 2.75rem;
+  border-radius: 6px;
+}
+
+#download-detail svg text {
+  fill: #fff;
+}
+
+#download-ios {
+  background-color: #000;
+  border: 1px solid #333;
+}
+
+#download-android {
+  margin-top: 0.5rem;
+  background-color: #8fc31f;
+  border: 1px solid #8fc31f;
+}
+
+#download-taptap {
+  margin-top: 0.5rem;
+  background-color: #009baa;
+  border: 1px solid #009baa;
+}
+
+#download-age {
+  position: absolute;
+  left: 24rem;
+
+  width: 7.5rem;
+  height: 9.7rem;
+  
+  border-radius: 10px;
+  background-color: #000;
+  background-size: cover;
+  background-image: url(https://web.hycdn.cn/arknights/official/static/age-tips.32cfababfafa8c51b9a5.png);
+}
+
+/*--information--*/
+
+#section-information {
+  height: 100%;
+}
+
+#article-category {
+  width: 54.25rem;
+  margin-left: 5.875rem;
+
+  display: flex;
+  justify-content: flex-end;
+  height: 2.25rem;
+  font-size: 1.25rem;
+  font-family: "SansMedium";
+}
+
+ol {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+#article-category-list > .articleCategoryItem { 
+  color: #000;
+  display: inline-block;
+  padding: 0 0.5rem;
+  margin: 0 0.75rem;
+  position: relative;
+  transition: color 0.3s, background-color 0.3s;
+}
+
+#information-banner-wrapper {
+  margin-top: 2.625rem;
+  margin-left: 5.875rem;
+  width: 54.25rem;
+}
+
+#information-banner {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+}
+
+#banner-list {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  white-space: nowrap;
+  height: 100%;
+}
+
+#banner-list > .bannerItem {
+  display: block;
+  flex-shrink: 0;
+  flex-grow: 0;
+  width: 100%;
+  height: 100%;
+}
+
+#banner-list .bannerItemImage {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+#article-container {
+  margin-top: 1rem;
+  width: 60.125rem;
+  flex-grow: 1;
+  flex-shrink: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+#article-list-wrapper {
+  flex-grow: 1;
+  display: block;
+  position: relative;
+}
+
+#article-footer {
+  margin: 2.75rem auto 0 5.875rem;
+  width: 54.25rem;
+  height: 2rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.articleList {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  flex-direction: column;
+  display: none;
+}
+
+.articleList.active {
+  display: flex;
+}
+
+.articleItem {
+  flex-basis: 16.666%;
+  border-image: linear-gradient(to right, #464646 0%, #464646 60%, rgba(70, 70, 70, 0) 100%) 30 stretch;
+  border-top-width: 0;
+  border-left-width: 0;
+  border-right-width: 0;
+  border-bottom: 1px solid;
+}
+
+.articleItemLink {
+  color: unset;
+  height: 100%;
+  margin-left: 5.875rem;
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+}
+
+.articleItemDate {
+  font-family: "Bender";
+  color: #000;
+  font-size: 0.875rem;
+  width: 6em;
+  text-align: center;
+  white-space: nowrap;
+}
+
+.articleItemCate {
+  font-family: "SansMedium";
+  color: #22bbff;
+  font-size: 1rem;
+  margin-left: 2.25rem;
+}
+
+.articleItemTitle {
+  font-family: sans-serif;
+  color: #000;
+  font-size: 1rem;
+  font-weight: normal;
+  margin: 0;
+  margin-left: 0.75rem;
+}
