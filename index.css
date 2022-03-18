@@ -1,10 +1,19 @@
+@font-face {
+  font-family: "SDK_Geometos";
+  src: url(./assets/SDK_Geometos.ttf);
+  font-weight: normal;
+  font-style: normal;
+}
+
 /*-Body-*/
 
 html {
   font-size: 14px;
+  font-family: "PINGFANG SC", sans-serif;
 }
 
 body {
+  margin: 0;
   background-image: url("https://pjsekai.sega.jp/assets/images/special/download/virtual-bg/virtual_bg_01_unit01.png");
   background-size: cover;
 }
@@ -16,12 +25,15 @@ body {
 
 /*--Section--*/
 
+section.section {
+  position: relative;
+}
+
 section.section .sectionDisplay {
   height: 100%;
   display: flex;
   flex-direction: column;
   box-sizing: border-box;
-
   padding: 3.5rem 0;
 }
 
@@ -158,34 +170,34 @@ ol {
   margin-top: 2.625rem;
   margin-left: 5.875rem;
   width: 54.25rem;
+  flex-shrink: 0;
 }
 
 #information-banner {
   width: 100%;
-  overflow: hidden;
   position: relative;
 }
 
 #banner-list {
-  position: absolute;
+  /* position: absolute; */
   top: 0;
   left: 0;
   display: flex;
   white-space: nowrap;
-  height: 100%;
+  overflow: hidden;
+  width: 100%;
 }
 
 #banner-list > .bannerItem {
   display: block;
   flex-shrink: 0;
-  flex-grow: 0;
+  /* flex-grow: 0; */
   width: 100%;
-  height: 100%;
 }
 
 #banner-list .bannerItemImage {
   display: block;
-  width: 100%;
+  /* width: 100%; */
   height: 100%;
 }
 
@@ -265,4 +277,443 @@ ol {
   font-weight: normal;
   margin: 0;
   margin-left: 0.75rem;
+}
+
+a.articleItemLink::before {
+  content: 'READ MORE+';
+  background-color: lightpink;
+  text-align: right;
+  width: 0;
+  display: inline-block;
+  white-space: nowrap;
+  overflow: hidden;
+  transition: width 0.5s;
+}
+
+a.articleItemLink:hover::before {
+  width: 9rem;
+}
+
+#morebutton {
+  position: relative;
+  padding: 0.4rem 0.8rem;
+  box-sizing: border-box;
+}
+
+#morebutton > span {
+  transition: color 0.2s;
+  font-size: 1.1rem;
+}
+
+#morebutton:hover > span {
+  color: #22bbff;
+}
+
+#morebutton::before, #morebutton::after {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 20%;
+  border-style: solid;
+  border-color: black;
+  content: '';
+  transition: all 0.2s;
+}
+
+#morebutton::before {
+  border-width: 1px 1px 0;
+  top: 0;
+}
+
+#morebutton::after {
+  border-width: 0 1px 1px;
+  bottom:0;
+}
+
+#morebutton:hover::before, #morebutton:hover::after {
+  border-color: #22bbff;
+  height: 50%;
+}
+
+#staff-list-wrapper {
+  /* background-color: #009baa; */
+  position: absolute;
+  top: 6rem;
+  left: 6rem;
+  bottom: 6rem;
+  overflow: hidden;
+  /* padding: 10px; */
+}
+
+#staff-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  height: 100%;
+  position: relative;
+  /* top: -16%; */
+}
+
+#staff-list-background {
+  position: absolute;
+  background-color: rebeccapurple;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  padding: 20px;
+}
+
+#staff-list.transition { 
+  transition: all .4s;
+}
+
+.staffItem {
+  display: flex;
+  height: 8%;
+  align-items: center;
+  cursor: pointer;
+}
+
+#staff-list.transition .staffItem {
+  transition: height .4s;
+}
+
+#staff-list.transition .staffListName .staffListNumber {
+  transition: all .4s;
+}
+
+.staffItem > img {
+  height: 100%;
+  text-align: center;
+}
+
+.staffItem > span {
+  height: fit-content;
+}
+
+.staffListNumber {
+  margin-right: 1rem;
+  font-size: 0.2rem;
+  font-family: "Bender";
+}
+
+.staffListName {
+  font-size: 1.3rem;
+  font-weight: 200;
+  /* font-family: "Mplus 1p", "ヒラギノ角ゴシック"; */
+  margin-left: .5rem;
+}
+
+.staffItem.active {
+  height: 12%;
+  /* background-color: #22bdff42; */
+}
+
+.staffItem.active .staffListName {
+  font-size: 2.5rem;
+  font-weight: 300;
+  color: #42b3ff;
+}
+
+.staffItem.active .staffListNumber {
+  color: #42b3ff;
+}
+
+#staff-name-board {
+  position: absolute;
+  display: flex;
+  left: 6rem;
+  bottom: 3rem;
+}
+
+@keyframes staffNameBoardShow {
+  0% {
+    transform: scale(1.5);
+    opacity: 0;
+  }
+  
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+@keyframes staffNameBoardHide {
+  0% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  
+  100% {
+    transform: scale(1.7);
+    opacity: 0;
+  }
+}
+
+#staff-name-board > div {
+  font-family: "SDK_Geometos";
+  /* animation: staffNameBoard 1s linear forwards; */
+}
+
+#staff-info-wrapper {
+  font-family: 'M PLUS 1p';
+  position: absolute;
+  bottom: calc(10% + 3.5rem);
+  right: calc(10% + 5rem);
+  width: 39.125rem;
+  height: 23.75rem;
+  padding-left: 7.7rem;
+  padding-right: 3.6rem;
+  box-sizing: border-box;
+  background-image: linear-gradient(to right, rgba(0, 174, 255, 0) 0%, rgba(0, 255, 234, 0.144) 20%, rgba(183, 0, 255, 0.0) 80%, rgba(0, 174, 255, 0) 100%);
+}
+
+#staff-info-wrapper::before {
+  content: "";
+  display: block;
+  position: absolute;
+  background-image: linear-gradient(to right, rgba(0, 174, 255, 0) 0%, rgba(0, 174, 255, 0.5) 20%, rgba(183, 0, 255, 0.5) 80%, rgba(0, 174, 255, 0) 100%);
+  width: 100%;
+  height: 1px;
+  top: 47.4%;
+  left: 0;
+  transition: all 0.3s 0.1s;
+}
+
+#staff-info-wrapper.unshow::after {
+  height: 0;
+}
+
+#staff-info-wrapper.unshow::before {
+  width: 0;
+}
+
+#staff-info-wrapper::after {
+  content: "";
+  display: block;
+  position: absolute;
+  background-image: linear-gradient(to bottom, rgba(0, 174, 255, 0) 0%, #fc88a360 20%, #fc88a375 50%, #fc88a360 80%, rgba(0, 174, 255, 0) 100%);
+  width: 1px;
+  height: 100%;
+  left: 20%;
+  top: 0;
+  transition: all 0.3s 0.1s;
+}
+
+#staff-info {
+  position: relative;
+  height: 100%;
+  line-height: 1;
+}
+
+#staff-info-name-wrapper {
+  position: absolute;
+  box-sizing: border-box;
+  bottom: 52.6%;
+  padding-bottom: 1.75rem;
+  padding-left: 1.5625rem;
+  width: 100%;
+}
+
+@keyframes staffInfoNameShow {
+  0% {
+    transform: translateX(120%);
+    opacity: 0;
+  }
+
+  18% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes staffInfoNameHide {
+  0% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+
+  100% {
+    transform: translateX(-30%);
+    opacity: 0;
+  }
+}
+
+#staff-info-name {
+  font-size: 4.375rem;
+  line-height: 1;
+  margin-bottom: 1rem;
+  animation: staffInfoNameShow 1s cubic-bezier(0.23, 1, 0.320, 1) forwards;
+}
+
+#staff-info-wrapper.unshow #staff-info-name {
+  animation: staffInfoNameHide 0.8s cubic-bezier(0.23, 1, 0.320, 1) both;
+}
+
+@keyframes staffInfoCVShow {
+  0% {
+    opacity: 0;
+    transform: translateX(2rem);
+  }
+
+  25% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes staffInfoCVHide {
+  0% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+
+  25% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+    transform: translateX(-2rem);
+  }
+}
+
+#staff-info-nameeng {
+  font-size: 1.25rem;
+  font-family: "SDK_Geometos";
+
+  animation: staffInfoCVShow .6s .2s ease-out both;
+}
+
+#staff-info-wrapper.unshow #staff-info-nameeng {
+  animation: staffInfoCVHide .4s .1s ease-out both;
+}
+
+#staff-info-bigname {
+  position: absolute;
+  bottom: -0.42rem;
+  left: 0.2rem;
+  font-size: 3rem;
+  color: #bb5cfa20;
+  font-weight: bold;
+  
+  animation: staffInfoCVShow .6s .3s ease-out both;
+}
+
+#staff-info-wrapper.unshow #staff-info-bigname {
+  animation: staffInfoCVHide .4s .16s ease-out both;
+}
+
+#staff-info-cv {
+  animation: staffInfoCVShow .5s .4s ease-out both;
+}
+
+#staff-info-wrapper.unshow #staff-info-cv {
+  animation: staffInfoCVHide .4s .2s ease-out both;
+}
+
+#staff-info-cv-wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+
+@keyframes staffInfoContentShow {
+  0% {
+    transform: translateY(120%);
+    opacity: 0;
+  }
+
+  18% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes staffInfoContentHide {
+  0% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+
+  100% {
+    transform: translateY(30%);
+    opacity: 0;
+  }
+}
+
+#staff-info-content {
+  position: absolute;
+  box-sizing: border-box;
+  top: 47.4%;
+  padding-top: 1.5625rem;
+  padding-left: 1.5625rem;
+  font-size: 0.875rem;
+  line-height: 2.2em;
+  animation: staffInfoContentShow 0.9s cubic-bezier(0.23, 1, 0.320, 1) forwards;
+}
+
+#staff-info-wrapper.unshow #staff-info-content {
+  animation: staffInfoContentHide .8s .1s cubic-bezier(0.23, 1, 0.320, 1) both;
+}
+
+#staff-image-wrapper {
+  /* position: absolute; */
+  /* right: 40%;
+  top: -10%; */
+  /* bottom: -25%; */
+  /* width: 30%; */
+}
+
+@keyframes staffImageShow {
+  0% {
+    transform: translate(calc(37vw + 100%), calc(70vh - 50%)) scale(0.7);
+    opacity: 0;
+  }
+
+  25% {
+    opacity: 0;
+  }
+
+  100% {
+    transform: translate(calc(37vw - 50%), calc(70vh - 50%)) scale(0.7);
+    opacity: 1;
+    /* transform: translateX(0) scale(0.7); */
+  }
+}
+
+@keyframes staffImageHide {
+  0% {
+    transform: translate(calc(37vw - 50%), calc(70vh - 50%)) scale(0.7);
+    opacity: 1;
+  }
+
+  100% {
+    transform: translate(calc(37vw - 100%), calc(70vh - 50%)) scale(0.7);
+    opacity: 0;
+  }
+}
+
+
+#staff-img {
+  /* position: a; */
+  /* width: 100%; */
+  transform: translate(calc(37vw - 50%), calc(70vh - 50%)) scale(0.7);
+  animation: staffImageShow 1s cubic-bezier(0.23, 1, 0.320, 1) both;
+}
+
+#staff-image-wrapper.unshow > img {
+  animation: staffImageHide 0.3s cubic-bezier(0.23, 1, 0.320, 1) both;
 }

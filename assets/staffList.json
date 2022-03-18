@@ -1,0 +1,105 @@
+[
+  {
+    "name": "宵崎奏",
+    "nameEng": "YOISAKI KANADE",
+    "img": "./assets/25night_code_icon.png",
+    "cv": "楠木ともり",
+    "info": "奏宝，一种夜行性生物。喜欢的食物是CUP NOODLES，不喜欢阳光，但是可以和25时的大家一起出去玩。是好孩子呢。",
+    "charimg": "./assets/kanade.png",
+    "color": "#bb5cfa20"
+  },
+  {
+    "name": "朝比奈まふゆ",
+    "nameEng": "ASAHINA MAFUYU",
+    "img": "./assets/25night_code_icon.png",
+    "cv": "田辺留依",
+    "info": "明るくユーモアもあり、誰からも頼られる優等生。サークルメンバーの中で、唯一学校にも普通に通っている。サークル活動の中でも、作詞を担当しながら様々な気遣いを見せる。一見、完璧な優等生に見えるが……？",
+    "charimg": "./assets/mafuyu.png"
+  },
+  {
+    "name": "東雲絵名",
+    "nameEng": "SHINONOME ENA",
+    "img": "./assets/25night_code_icon.png",
+    "cv": "鈴木みのり",
+    "info": "承認されたいという気持ちが強く、SNS依存気味。父親は有名な画家で、自身も絵を描いて投稿していた。それを見つけた奏に声をかけられメンバーに。サークルでは主に動画用のイラストを担当している。",
+    "charimg": "./assets/ena.png"
+  },
+  {
+    "name": "暁山みずき",
+    "nameEng": "AKIYAMA MIZUKI",
+    "img": "./assets/25night_code_icon.png",
+    "cv": "佐藤日向",
+    "info": "可愛いものが大好きな気分屋。たまたま聴いた奏の曲に惹かれるものを感じ、MVをつくって投稿する。それが奏自身の目に留まり、動画担当として誘われた。サークルメンバーの誰も知らない秘密がある。",
+    "charimg": "./assets/mizuki.png"
+  },
+  {
+    "name": "日野森志歩",
+    "nameEng": "HINOMORI SHIHO",
+    "img": "./assets/Leoneed_icon.png",
+    "cv": "中島由貴",
+    "info": "馴れ合いを嫌う一匹狼。自分の好きなことに没頭し、周囲の人間にどう思われようが気にしない。そんな彼女も、かつては幼馴染みたちと行動を共にしており、友人たちのことも大切に思っていたのだが……。Leo/needではベース担当。",
+    "charimg": "./assets/shiho.png"
+  },
+  {
+    "name": "星野一歌",
+    "nameEng": "HOSHINO ICHIKA",
+    "img":"./assets/Leoneed_icon.png",
+    "cv": "野口瑠璃子",
+    "info": "クールに見えて、本当は友人想いの優しい少女。咲希、穂波、志歩とは幼馴染みだが、ある事情から穂波と志歩とは関係がぎくしゃくしている。ミクの歌を聴くことが好き。Leo/needではギターとボーカル担当。",
+    "charimg": "./assets/ichika.png"
+  },
+  {
+    "name": "初音ミク",
+    "nameEng": "HATSUNE MIKU",
+    "img": "./assets/Virtual_singer_icon.png",
+    "cv": "ORIGINAL BY 藤田咲",
+    "info": "ブルーグリーンのツインテールが特徴的な少女バーチャル・シンガー。ハツラツとした明るく可愛い歌声で様々なジャンルの歌を歌う。バーチャル・シンガーの中でも、世代を問わず世界的に名前が知られている。",
+    "charimg": "./assets/miku.png",
+    "color": "rgba(53, 208, 210, 0.2)"
+  },
+  {
+    "name": "鏡音リン",
+    "nameEng": "KAGAMINE RIN",
+    "img": "./assets/Virtual_singer_icon.png",
+    "cv": "ORIGINAL BY 下田麻美",
+    "info": "大きなリボンを着けたブロンドボブヘアが特徴的な少女バーチャル・シンガー。鏡音レンとはツイン・ボーカル。キュートで元気な見た目にぴったりな、チャーミングな歌声を持っている。",
+    "charimg": "./assets/rin.png",
+    "color": "rgba(246, 206, 76, 0.2)"
+  },
+  {
+    "name": "鏡音レン",
+    "nameEng": "KAGAMINE RIN",
+    "img": "./assets/Virtual_singer_icon.png",
+    "cv": "ORIGINAL BY 下田麻美",
+    "info": "短く後ろに結ばれたブロンドヘアが特徴的な少年バーチャル・シンガー。鏡音リンとはツイン・ボーカル。少年らしい芯のあるパワフルな歌声の中に感情表現の豊かさもかね備えている。",
+    "charimg": "./assets/ren.png",
+    "color": "rgba(246, 206, 76, 0.2)"
+  },
+  {
+    "name": "巡音ルカ",
+    "nameEng": "MEGURINE RUKA",
+    "img": "./assets/Virtual_singer_icon.png",
+    "cv": "ORIGINAL BY 浅川悠",
+    "info": "ピンクのロングヘアが特徴的な女性バーチャル・シンガー。落ちついた物腰によく合う柔らかい歌声を持つ一方、時には情熱的な歌声を聴かせることも。バイリンガルで、日本語と英語で歌うことができる。",
+    "charimg": "./assets/ruka.png",
+    "color": "rgba(245, 190, 204, 0.2)"
+  },
+  {
+    "name": "MEIKO",
+    "nameEng": "MEIKO",
+    "img": "./assets/Virtual_singer_icon.png",
+    "cv": "ORIGINAL BY 拝郷メイコ",
+    "info": "栗色のショートボブと、赤いショート丈のトップスとミニスカートが特徴的な女性バーチャル・シンガー。安定感のある抜群の歌唱力と、女性ならではの優しく温かみのある声質を持っている。",
+    "charimg": "./assets/meiko.png",
+    "color": "rgba(221, 104, 100, 0.2)"
+  },
+  {
+    "name": "KAITO",
+    "nameEng": "KAITO",
+    "img": "./assets/Virtual_singer_icon.png",
+    "cv": "ORIGINAL BY 風雅なおと",
+    "info": "若干外ハネしたダークブルーの髪と、青いロングマフラーの衣装が特徴的な男性バーチャル・シンガー。清涼感のある素直な歌声で、男性らしい厚みのある低音から伸びのある高音まで歌いわける。",
+    "charimg": "./assets/kaito.png",
+    "color": "rgba(91, 128, 220, 0.2)"
+  }
+]
