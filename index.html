@@ -105,8 +105,8 @@
         </svg>
     </div>
     <div id="main">
-      <div id="sectionWrapper">
-        <section id="section-homepage" class="section" style="display:none;">
+      <div id="section-wrapper">
+        <section id="section-homepage" class="section">
           <img id="homepage-logo" src="https://www.clipstudio.net/view/promotion/nurimas15/view/img/design/main_logo.png">
           <div id="homepage-display">
             <div id="homepage-title">
@@ -146,7 +146,7 @@
             </div>
           </div>
         </section>
-        <section id="section-information" class="section" style="display:none">
+        <section id="section-information" class="section">
           <div class="sectionDisplay">
             <div id="article-category">
               <ol id="article-category-list">
@@ -158,7 +158,16 @@
             </div>
             <div id="information-banner-wrapper">
               <div id="information-banner">
-                <ol id="banner-list" style="transform: translate3d(0px, 0px, 0px); transition-duration: 0ms;"><li class="bannerItem swiper-slide-active" data-source="https://web.hycdn.cn/arknights/official/pic/20220129/92f408415fa8ece0371ba81e0b492cc2.jpg" data-source-h5="https://web.hycdn.cn/arknights/official/pic/20220129/50b79d759680e7f3656762f0cb7bcbcc.jpg" style="width: 760px;"><a href="https://ak.hypergryph.com/is/crimsonsolitaire" target="_blank"><img class="bannerItemImage" src="https://web.hycdn.cn/arknights/official/pic/20220129/92f408415fa8ece0371ba81e0b492cc2.jpg"></a></li><li class="bannerItem swiper-slide-next" data-source="https://web.hycdn.cn/arknights/official/pic/20220120/6775127ce9a4e688d45e65cb80c06e0f.jpg" data-source-h5="https://web.hycdn.cn/arknights/official/pic/20220120/f60a4153c3f46122929b4c150c400ed5.jpg" style="width: 760px;"><a href="/news/2021099183.html" target="_blank"><img class="bannerItemImage" src="https://web.hycdn.cn/arknights/official/pic/20220120/6775127ce9a4e688d45e65cb80c06e0f.jpg"></a></li><li class="bannerItem" data-source="https://web.hycdn.cn/arknights/official/pic/20210329/051a94bbafbbdeabc9e37db803779f66.jpg" data-source-h5="https://web.hycdn.cn/arknights/official/pic/20210329/0068d91537719ec1a94562371428b6ea.jpg" style="width: 760px;"><a href="https://monster-siren.hypergryph.com/" target="_blank"><img class="bannerItemImage" src="https://web.hycdn.cn/arknights/official/pic/20210329/051a94bbafbbdeabc9e37db803779f66.jpg"></a></li><li class="bannerItem" data-source="https://web.hycdn.cn/arknights/official/pic/20210514/414b3f706b35fa856ae4956875670f50.jpg" data-source-h5="https://web.hycdn.cn/arknights/official/pic/20210514/86316f7f4740259398dc599bb3205bd7.jpg" style="width: 760px;"><a href="https://terra-historicus.hypergryph.com/" target="_blank"><img class="bannerItemImage" src="https://web.hycdn.cn/arknights/official/pic/20210514/414b3f706b35fa856ae4956875670f50.jpg"></a></li><li class="bannerItem" data-source="https://web.hycdn.cn/arknights/official/pic/20210428/86de023d2a81074a26c21bc113b57c52.png" data-source-h5="https://web.hycdn.cn/arknights/official/pic/20210428/84d1ac6e7c3e52f1af18d4c91392b09d.png" style="width: 760px;"><a href="https://detail.tmall.com/item.htm?id=643684650828" target="_blank"><img class="bannerItemImage" src="https://web.hycdn.cn/arknights/official/pic/20210428/86de023d2a81074a26c21bc113b57c52.png"></a></li></ol>
+                <div id="banner-list" class="transition">
+                  <img class="bannerItemImage" src="./assets/banner1.png">
+                  <img class="bannerItemImage" src="./assets/banner2.jpeg">
+                  <img class="bannerItemImage" src="./assets/banner3.JPG">
+                  <img class="bannerItemImage" src="./assets/banner4.JPG">
+                  <img class="bannerItemImage" src="./assets/banner5.JPG">
+                </div>
+                <div id="banner-dot-wrapper" class="transition">
+                  <div class="bannerDot"></div>
+                </div>
               </div>
             </div>
             <div id="article-container">
@@ -203,8 +212,17 @@
           </div>
         </section>
       </div>
+      <div id="section-catagory-wrapper">
+        <ul id="section-catagory">
+          <li class="sectionCatagoryItem active" list-id="0">首页</li>
+          <li class="sectionCatagoryItem" list-id="1">情报</li>
+          <li class="sectionCatagoryItem" list-id="2">角色</li>
+        </ul>
+      </div>
     </div>
     <script src="./js/agent.js"></script>
+    <script src="./js/utility.js"></script>
+    <script src="./js/info.js"></script>
     <script src="./js/staff.js"></script>
   </body>
 </html>
