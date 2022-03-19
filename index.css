@@ -8,7 +8,7 @@
 /*-Body-*/
 
 html {
-  font-size: 13;
+  font-size: 14px;
   font-family: "PINGFANG SC", sans-serif;
 }
 
@@ -682,8 +682,8 @@ a.articleItemLink:hover::before {
   font-size: 3rem;
   color: #bb5cfa20;
   font-weight: bold;
-  
   animation: staffInfoCVShow .6s .3s ease-out both;
+  white-space: nowrap;
 }
 
 #staff-info-wrapper.unshow #staff-info-bigname {
