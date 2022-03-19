@@ -41,6 +41,10 @@ function selectStaff(i) {
   //处理侧边栏
   if (isTransition) return;
   isTransition = true;
+
+  //预加载图片
+  Agent.prefetch(staffData[i % staffData.length].charimg);
+
   console.log(i);
   staffList.style.top = `${(i - 3) * (-8)}%`;
   staffList.classList.add('transition');

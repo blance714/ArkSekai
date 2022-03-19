@@ -1,0 +1,13 @@
+body {
+  margin: 0;
+}
+
+#main {
+  height: calc(100vh);
+  width: calc(100vw);
+}
+
+#paper {
+  /* height: 100%;
+  width: 100%; */
+}
